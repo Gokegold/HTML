@@ -136,7 +136,6 @@ nav{
     box-shadow: 0 0 10px rgb(red, green, blue, 0.1);
 }
 
-
 .event p{
     font-size: 12px;
 }
@@ -145,4 +144,43 @@ nav{
     font-size: 12px;
     text-decoration: none;
     color: #1876f2;
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    color: #fff;
+    font-size: 10pX;
+    padding: 4PX 0;
+}
+
+.sidebar-ads{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.online-list .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.online-list .online::after{
+    top: unset;
+    bottom: 0;
 }
