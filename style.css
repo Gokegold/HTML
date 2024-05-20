@@ -145,9 +145,6 @@ nav{
 .imp-links{
     border-bottom: 1PX solid #ccc;
 }
-   right: 0;
-}
-/* Modified [Maay 19, 2024] */
 
 .shortcut-links a img{
     width: 40px;
@@ -266,7 +263,7 @@ nav{
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border-radius: 5px solid #626262;
+    border: 5px solid #1876f2;
 }
 
 .story p{
@@ -292,4 +289,86 @@ nav{
 }
 .story5{
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)),url(images/socialbook_img/status-5.png);
+}
+
+.story.story1 img{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+.write-post-ontainer{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    color: #626262;
+    border-radius: 6px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img{
+    width: 45px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small{
+    font-size: 12px;
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.add-post-links a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.post-container{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    color: #626262;
+    margin: 20px 0;
+
 }
