@@ -372,3 +372,85 @@ nav{
     margin: 20px 0;
 
 }
+.post-container{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.user-profile{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-text{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.pot-text span{
+    color: #626262;
+    font-weight: 500;
+}
+.pot-text a{
+    color: #1876f2;
+    text-decoration: none;
+}
+.post-img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-icons div img{
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.pot-profile-icon{
+    display: flex;
+    align-items: center;
+}
+
+.pot-profile-icon img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.post-row a{
+    color: #9a9a9a;
+}
+
+.load-more-btn{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #626262;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.footer{
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0 20px;
+    font-size: 13px;
+}
