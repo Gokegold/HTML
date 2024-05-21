@@ -7,7 +7,7 @@ Github: https://www.github.com/Gokegold
 
 Date Created: [May 20, 2024]
 
-last modification:: [May 20, 2024]
+last modification:: [May 20, 2024] [May 21, 2024]
 */
 
 var settingsmenu = document.querySelector(".settings-menu");
