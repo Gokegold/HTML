@@ -7,7 +7,7 @@ Github: https://www.github.com/Gokegold
 
 Date Created: [May 17, 2024]
 
-last modification:: [May 17, 2024] [May 18, 2024] [May 19, 2024] [May 20, 2024]
+last modification:: [May 17, 2024] [May 18, 2024] [May 19, 2024] [May 20, 2024] [May 21, 2024]
 */
 
 *{
@@ -16,15 +16,30 @@ last modification:: [May 17, 2024] [May 18, 2024] [May 19, 2024] [May 20, 2024]
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
+:root{
+    --body-color: #efefef;
+    --nav-color: #181818;
+    --bg-color: #fff;
+}
+
+.dark-theme{
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}
+
+
 body{
-    background: #efefef;
+    background: var(--body-color);
+    transition: background 0.3s;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f2;
+    background: var(--nav-color);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -114,7 +129,7 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background-color: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #626262;
@@ -302,7 +317,7 @@ nav{
 
 .write-post-ontainer{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     color: #626262;
     border-radius: 6px;
@@ -365,7 +380,7 @@ nav{
 
 .post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 6px;
     color: #626262;
@@ -509,4 +524,30 @@ nav{
     justify-content: space-between;
     text-decoration: none;
     color: #626262;
+}
+
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    border-radius: 15px;
+    width: 45px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+}
+
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #000;
+
 }
