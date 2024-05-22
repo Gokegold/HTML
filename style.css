@@ -592,3 +592,22 @@ nav{
 .pd-row div p{
     font-size: 13px; 
 }
+
+.pd-row div img{
+    width: 25px;
+    border-radius: 50px;
+    margin-top: 12px;
+}
+
+.pd-right button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
