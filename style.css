@@ -19,7 +19,7 @@ last modification:: [May 17, 2024] [May 18, 2024] [May 19, 2024] [May 20, 2024] 
 
 :root{
     --body-color: #efefef;
-    --nav-color: #181818;
+    --nav-color: #1876f2;
     --bg-color: #fff;
 }
 
@@ -474,7 +474,7 @@ nav{
     position: absolute;
     width: 90%;
     max-width: 350px;
-    background: #fff;
+    background: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
@@ -536,6 +536,7 @@ nav{
     padding: 2px 3px;
     cursor: pointer;
     display: flex;
+    transition: padding-left 0.5s, background 0.5s;
 }
 
 #dark-btn span{
@@ -548,6 +549,46 @@ nav{
 
 #dark-btn.dark-btn-on{
     padding-left: 23px;
-    background: #000;
+    background: #e7e2e26c;
+}
 
+/*  Profile page*/
+.profile-continer{
+    padding: 20px 15px;
+    color: #626262;
+}
+
+.cover-img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.profile-details{
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.pdd-row{
+    display: flex;
+    align-items: flex-start;
+}
+
+.pd-image{
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.pd-row div h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.pd-row div p{
+    font-size: 13px; 
 }
