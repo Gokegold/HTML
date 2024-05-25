@@ -828,3 +828,23 @@ nav{
     }
 
 }
+/*----  profile page media query ---=- */
+@media (max-width: 900px){
+    .profile-container{
+        padding: 20px 50%;;
+    }
+    .profile-details{
+        flex-wrap: wrap;
+    }
+    .pd-right{
+        text-align: left;
+        margin-top: 15Px;
+    }
+    .pd-right button{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .pdd-row ddiv h3{
+        font-size: 16px;
+    }
+}
