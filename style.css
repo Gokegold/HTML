@@ -1,46 +1,4 @@
-/*
-html
-
-Twitter @i_amgoke: https://twitter.com/i_amgoke
-
-Github: https://www.github.com/Gokegold
-
-Date Created: [May 17, 2024]
-
-last modification:: [May 17, 2024] [May 18, 2024] [May 19, 2024] [May 20, 2024] [May 21, 2024]
-                    [May 22, 2024] [May 23, 2024] [May 24, 2024]
-*/
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-:root{
-    --body-color: #efefef;
-    --nav-color: #1876f2;
-    --bg-color: #fff;
-}
-
-.dark-theme{
-    --body-color: #0a0a0a;
-    --nav-color: #000;
-    --bg-color: #000;
-}
-
-
-body{
-    background: var(--body-color);
-    transition: background 0.3s;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  *{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
@@ -147,7 +105,7 @@ nav{
     padding: 13PX 5%;
 }
 
-.left-siedbar{
+.left-sidebar{
     flex-basis: 25%;
     position: sticky;
     top: 70px;
@@ -500,6 +458,7 @@ nav{
     font-size: 13px;
 }
 
+
 .settings-menu{
     position: absolute;
     width: 90%;
@@ -761,14 +720,13 @@ nav{
 .friends-box div img{
     width: 100%;
     cursor: pointer;
+    padding-bottom: 20px;
+    display: flex;
 }
 .friends-box div{
     position: relative;
 }
 
-.friends-box p{
-    position: absolute;
-}
 /*------ homee page media query -----*/
 
 @media (max-width: 900px){
@@ -844,7 +802,13 @@ nav{
         margin-left: 0;
         margin-right: 10px;
     }
-    .pdd-row ddiv h3{
+    .pdd-row div h3{
         font-size: 16px;
+    }
+    .profile-info{
+        flex-wrap: wrap;
+    }
+    .info-col, .post-col{
+        flex-basis: 100%;
     }
 }
