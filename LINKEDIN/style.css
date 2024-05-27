@@ -6,7 +6,7 @@ Github: https://www.github.com/Gokegold
 
 Date Created: [May 26, 2024]
 
-last modification:: [May 26, 2024]
+last modification:: [May 26, 2024] [May 27, 2024]
 */
 
 *{
@@ -169,6 +169,59 @@ a{
     align-items: center;
     border-top: 1px solid #ccc;
 }
+
+.sidebar-profile-link a{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    border-left: 1px solid #ccc;
+}
+
+.sidebar-profile-link a:first-child{
+    border-left: 0;
+}
+
+.sidebar-profile-link a img{
+    width: 20p;
+    margin-right: 10px;
+}
+
+.sidebar-activity{
+    background: #fff;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+
+.sidebar-activity h3{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.sidebar-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #888;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.sidebar-activity a img{
+    width: 20px;
+    margin-right: 10px;
+
+}
+
+
+
+
+
+
+
+
 
 
 
