@@ -302,6 +302,7 @@ a{
 .sidebar-ad p{
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .sidebar-ad b{
     display: block;
@@ -344,13 +345,32 @@ a{
     margin: 10px 4px -5px;
 }
 
-
-
-
-
-
-
+/* --------Main-content--------- */
 
 .main-content{
     flex-basis: 47%;
+}
+.create-post{
+    background: #fff;
+}
+.create-post-input{
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.create-post-input img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.create-post textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    margin-top: 8px;
+}
+::placeholder{
+    font-weight: 500;
 }
