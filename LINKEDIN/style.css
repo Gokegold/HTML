@@ -374,3 +374,20 @@ a{
 ::placeholder{
     font-weight: 500;
 }
+
+.create-post-links{
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-links LI{
+    list-style: none;
+    border-top: 1px;
+    border-radius: 1px solid #ccc;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
