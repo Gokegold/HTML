@@ -448,3 +448,13 @@ a{
     margin-right: 10px;
     margin-top: 5px;
 }
+.post-author h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333 ;
+}
+
+.post-author small{
+    display: block;
+    margin-bottom: -2px;
+}
