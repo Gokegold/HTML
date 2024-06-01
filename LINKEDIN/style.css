@@ -9,6 +9,7 @@ Date Created: [May 26, 2024]
 last modification:: [May 26, 2024] [May 27, 2024] [May 28, 2024] [May 29, 2024] [May 30, 2024] [June 1, 2024]
 */
 
+
 *{
     margin: 0;
     padding: 0;
@@ -124,6 +125,8 @@ a{
 .left-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 
 .sidebar-profile-box{
@@ -154,7 +157,7 @@ a{
 }
 .sidebar-profile-info ul{
     list-style: none;
-    margin: 20px 0;
+    margin: 20px 0; 8
 }
 .sidebar-profile-info ul li{
     width: 100%;
@@ -207,7 +210,7 @@ a{
 .sidebar-activity a{
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
     color: #888;
     font-weight: 500;
     margin: 3px 0;
@@ -230,22 +233,13 @@ a{
     margin: 10px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*--------right-sidebar--------*/
 
 .right-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 .sidebar-news{
     background: #fff;
@@ -253,7 +247,7 @@ a{
 }
 .info-icon{
     width: 15px;
-    float:right;
+    float: right;
     margin-top: 15px;
 }
 
@@ -342,7 +336,7 @@ a{
 
 .copyright-msg img{
     width: 18px;
-    margin: 10px 4px -5px;
+    margin: 4px;
 }
 
 /* --------Main-content--------- */
@@ -350,6 +344,7 @@ a{
 .main-content{
     flex-basis: 47%;
 }
+
 .create-post{
     background: #fff;
 }
@@ -363,7 +358,7 @@ a{
     border-radius: 50%;
     margin-right: 10px;
 }
-.create-post textarea{
+.create-post-input textarea{
     width: 100%;
     border: 0;
     outline: 0;
@@ -380,7 +375,7 @@ a{
     align-items: flex-start;
 }
 
-.create-post-links LI{
+.create-post-links li{
     list-style: none;
     border-top: 1px;
     border-right: 1px solid #ccc;
@@ -397,7 +392,7 @@ a{
     width: 15px;
     margin-right: 5px;
 }
-.create-post-linksli:last-child{
+.create-post-links li:last-child{
     background: #045be6;
     color: #fff;
     border-top: 0;
@@ -406,7 +401,7 @@ a{
 .sort-by{
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
 }
 .sort-by hr{
     flex: 1;
@@ -442,7 +437,7 @@ a{
     margin-bottom: 20px;
 }
 
-.post-author{
+.post-author img{
     border-radius: 50%;
     width: 35px;
     margin-right: 10px;
@@ -451,7 +446,7 @@ a{
 .post-author h1{
     font-size: 18px;
     font-weight: 600;
-    color: #333 ;
+    color: #333;
 }
 
 .post-author small{
@@ -460,7 +455,7 @@ a{
 }
 .post p{
     font-size: 14px;
-    margin-bottom: -2px;
+    margin-bottom: 15px;
 }
 
 .post-stats{
@@ -482,8 +477,9 @@ a{
     width: 15px;
     margin-right: -5px;
 }
+
 .liked-users{
-    margin-left: flex;
+    margin-left: 10px;
 }
 
 .post-activity{
@@ -501,7 +497,7 @@ a{
 }
 
 .post-activity-user-icon{
-    width: 20px;
+    width: 22px;
     border-radius: 50%;
 }
 
@@ -509,7 +505,33 @@ a{
     width: 12px;
     margin-left: 5px;
 }
+
 .post-activity-link img{
     width: 18px;
-    margin-right: 8px;
+    margin-right: 8px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+
+
+/* ----- Profile-rop-own -menu--- */
+.profile-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+}
+.profile-menu{
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 18px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
