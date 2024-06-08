@@ -42,23 +42,49 @@ last modification:: [May 26, 2024] [May 27, 2024] [May 28, 2024] [May 29, 2024] 
     </div>
     <div class="navbar-right">
         <div class="online">
-            <img src="images/user-1.png" class="nav-profile-img">
+            <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
         </div>
     </div>
-    <div class="profile-menu-wrap">
-        <div class="profile-menu">
+
+<!--- profile-menu-drop-down -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
             <img src="images/user-1.png">
             <div>
                 <h3>Walton Rayan</h3>
-                <a href="#"See Your Profile></a>
+                <a href="#">See Your Profile</a>
             </div>
         </div>
-
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibity</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+        </a>
     </div>
+</div>
 </nav>
-    <!-- -------------- nav bar closing ---------- -->
+    <!--- nav bar closing  -->
+
+
 <div class="container">
-    <!-- --------------- left -------------- sidebar -->
+    <!-- - left - sidebar -->
     <div class="left-sidebar">
         <div class="sidebar-profile-box">
             <img src="images/cover-pic.png" width="100%">
@@ -96,12 +122,236 @@ last modification:: [May 26, 2024] [May 27, 2024] [May 28, 2024] [May 29, 2024] 
             <a href="#"><img src="images/hashtag.png"> userinterface </a>
             <a href="#"><img src="images/hashtag.png"> onlinelearning </a>
             <div class="discover-more-link">
-                <a href="#">Discove more</a>
+                <a href="#">Discover more</a>
             </div>
         </div>
     </div>
-    <!-- - - - -  - - - - main content - - - - -  - - - - -->
-     
+    <div class="main-content">
+
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/user-1.png">
+                <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="images/photo.png">Photo</li>
+                <li><img src="images/video.png">Videos</li>
+                <li><img src="images/event.png">Events</li>
+                <li>Post</li>
+            </div>
+        </div>
+
+        <div class="sort-by">
+            <hr>
+            <p>Sort by:<span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+<!-- POST -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-3.png">
+                <div>
+                    <h1>Leo Benjamin</h1>
+                        <small>CEO and Founder at Gellelio Group | Invetor Angel</small>
+                        <small>3 hour ago</small>
+                </div>
+            </div>
+            <p>To be successful in website building that will depend on the search engine ussedd.
+                If your website appears on the first page of most of the site engine
+                then your website might be famous.
+            </p>
+            <img src="images/post-image-1.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ahbniva misha and 75 others</span>
+                </div>
+                <div>
+                    <span>4545 comments &middot; 4510 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-1.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+
+<!-- POST 2 -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-2.png">
+                <div>
+                    <h1>JON Bobby </h1>
+                        <small>CEO and Founder at Gellelio Group | Invetor Angel</small>
+                        <small>3 hour ago</small>
+                </div>
+            </div>
+            <p>To be successful in website building that will depend on the search engine ussedd.
+                If your website appears on the first page of most of the site engine
+                then your website might be famous.
+            </p>
+            <img src="images/post-image-3.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ahbniva misha and 75 others</span>
+                </div>
+                <div>
+                    <span>4545 comments &middot; 4510 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-1.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+<!-- POST 3 -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-5.png">
+                <div>
+                    <h1>Brady Tames </h1>
+                        <small>CEO and Founder at Gellelio Group | Invetor Angel</small>
+                        <small>3 hour ago</small>
+                </div>
+            </div>
+            <p>To be successful in website building that will depend on the search engine ussedd.
+                If your website appears on the first page of most of the site engine
+                then your website might be famous.
+            </p>
+            <img src="images/post-image-2.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ahbniva misha and 75 others</span>
+                </div>
+                <div>
+                    <span>4545 comments &middot; 4510 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-2.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+
+<!-- POST 4 -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-4.png">
+                <div>
+                    <h1>Clearence B </h1>
+                        <small>CEO and Founder at Gellelio Group | Invetor Angel</small>
+                        <small>3 hour ago</small>
+                </div>
+            </div>
+            <p>To be successful in website building that will depend on the search engine ussedd.
+                If your website appears on the first page of most of the site engine
+                then your website might be famous.
+            </p>
+            <img src="images/post-image-4.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ahbniva misha and 75 others</span>
+                </div>
+                <div>
+                    <span>4545 comments &middot; 4510 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-2.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    
     <!-- -  - - - -  -  - right-sidebar- -  -  - -  -  -  -->
     <div class="right-sidebar">
         <div class="sidebar-news">
@@ -153,5 +403,14 @@ last modification:: [May 26, 2024] [May 27, 2024] [May 28, 2024] [May 29, 2024] 
         </div>
     </div>
 </div>
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+</script>
+
 </body>
 </html>
