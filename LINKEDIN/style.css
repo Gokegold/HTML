@@ -158,7 +158,7 @@ a{
 }
 .sidebar-profile-info ul{
     list-style: none;
-    margin: 20px 0; 8
+    margin: 20px 0;
 }
 .sidebar-profile-info ul li{
     width: 100%;
@@ -244,7 +244,7 @@ a{
 }
 .sidebar-news{
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 .info-icon{
     width: 15px;
@@ -264,7 +264,7 @@ a{
     font-size: 12px;
     font-weight: 600;
     margin-top: 10px;
-    margin-bottom:-5px;
+    margin-bottom: -5px;
 }
 .sidebar-news span{
     font-size: 12px;
@@ -272,12 +272,12 @@ a{
 .sidebar-news .read-more-link{
     color: #045be6;
     font-weight: 500;
-    margin: 20px 10px;
+    margin: 20px 0 10px;
 }
 
 .sidebar-ad{
     background: #fff;
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-align: center;
     margin: 12px 0;
     font-size: 12px;
@@ -337,7 +337,7 @@ a{
 
 .copyright-msg img{
     width: 18px;
-    margin: 4px;
+    margin: 0px 4px -15px;
 }
 
 /* --------Main-content--------- */
@@ -378,10 +378,10 @@ a{
 
 .create-post-links li{
     list-style: none;
-    border-top: 1px;
+    border-top: 1px solid #ccc;
     border-right: 1px solid #ccc;
     flex-basis: 25%;
-    height: 40px;
+    height: 40px;  
     font-size: 13px;
     display: flex;
     align-items: center;
@@ -512,13 +512,18 @@ a{
     margin-right: 8px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
-
-/* ----- Profile-rop-own -menu--- */
+/* ----- Profile-drop-down -menu--- */
 .profile-menu-wrap{
     position: absolute;
     top: 100%;
     right: 5%;
     width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.profile-menu-wrap.open-menu{
+    max-height: 400px;
 }
 .profile-menu{
     background: #222;
@@ -526,6 +531,7 @@ a{
     padding: 20px;
     margin: 18px;
 }
+
 .user-info{
     display: flex;
     align-items: center;
@@ -533,6 +539,41 @@ a{
 
 .user-info img{
     width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.user-info h3{
+    font-weight: 500;
+    margin-bottom: -3px;
+}
+
+.user-info a{
+    color: #c9dbf8;
+    font-size: 13px;
+}
+
+.profile-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0 10px;
+}
+
+.profile-menu-link{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.profile-menu-link p{
+    width: 100%;
+}
+
+.profile-menu-link img{
+    width: 35px;
     border-radius: 50%;
     margin-right: 15px;
 }
