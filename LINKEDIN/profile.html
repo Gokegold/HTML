@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+        <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/message.png"> <span>Mesaaging</span></a></li>
+            <li><a href="#"><img src="images/notification.png"> <span>Notification</span></a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+    </div>
+
+<!--- profile-menu-drop-down -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user-1.png">
+            <div>
+                <h3>Walton Rayan</h3>
+                <a href="#">See Your Profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibity</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+</nav>
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+</script>
+
+</body>
+</html>
